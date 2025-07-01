@@ -3,7 +3,7 @@
     display: flex; align-items: center; justify-content: space-between;
     padding: 0 70px; height: 70px;
     position: sticky; width: 100%; top: 0; left: 0;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 999;
     background: #fff;
 }
@@ -14,9 +14,12 @@
     text-align: center; flex-grow: 1; text-transform: uppercase;
     position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
 }
+.main_wrap header h1 a {display: block; width: 100%; height: 70px; line-height: 70px;}
 .main_wrap header h1 * {color: #000; font-size: 1.125rem; font-weight: 600; text-align: center;}
 .main_wrap header .right_btn_wrap {display: flex; gap: 15px;}
 .main_wrap header .right_btn_wrap button {}
 .main_wrap header .right_btn_wrap button img {}
-.main_wrap header .right_btn_wrap button span {font-size: 0.75rem;}
+.main_wrap header .right_btn_wrap button span {font-size: 0.75rem; color: #000;}
 .main_wrap header .right_btn_wrap button span img {margin-right: 3px;}
+
+/* 풋터============================================================================ */
