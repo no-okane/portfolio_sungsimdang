@@ -1,4 +1,4 @@
-body * {transition: all 0.3s;}
+body * {transition: all 0.3s; overflow: hidden;}
 .main_wrap {min-height: 100vh;}
 
 /* 
@@ -95,16 +95,16 @@ body * {transition: all 0.3s;}
     display: flex; flex-flow: row wrap; align-items: center; gap: 25px;
     width: calc(100% - 698px);
 }
-.main_wrap #best_new .container .thumbs_list .right a {display: flex; flex-flow: column nowrap; gap: 20px;}
-.main_wrap #best_new .container .thumbs_list .right a .img {
+.main_wrap #best_new .container .thumbs_list .right .product {display: flex; flex-flow: column nowrap; gap: 20px;}
+.main_wrap #best_new .container .thumbs_list .right .product .img {
     background: #FBF8E7; width: 330px; height: 330px; border-radius: 20px;
     display: flex; justify-content: center; align-items: center;
 }
-.main_wrap #best_new .container .thumbs_list .right a .img img {width: 200px; height: 200px;}
-.main_wrap #best_new .container .thumbs_list .right a .txt {padding: 0 20px; display: flex; flex-flow: column nowrap; gap: 3px;}
-.main_wrap #best_new .container .thumbs_list .right a .txt * {color: #000;}
-.main_wrap #best_new .container .thumbs_list .right a .txt em {padding: 1px; border-bottom: 1px solid #000; font-weight: 600; width: max-content;}
-.main_wrap #best_new .container .thumbs_list .right a .txt span {font-size: 0.875rem;}
+.main_wrap #best_new .container .thumbs_list .right .product .img img {width: 200px; height: 200px;}
+.main_wrap #best_new .container .thumbs_list .right .product .txt {padding: 0 20px; display: flex; flex-flow: column nowrap; gap: 7px;}
+.main_wrap #best_new .container .thumbs_list .right .product .txt * {color: #000;}
+.main_wrap #best_new .container .thumbs_list .right .product .txt em {padding: 1px; border-bottom: 1px solid #000; font-weight: 600; width: max-content;}
+.main_wrap #best_new .container .thumbs_list .right .product .txt span {font-size: 0.875rem;}
 
 /* 4행 광고 배너============================================================================ */
 .main_wrap #ad_bnr {padding: 70px 0;}
@@ -148,7 +148,7 @@ body * {transition: all 0.3s;}
     width: 100%; height: 221px; background: #f5f5f5; border-radius: 20px;
 }
 .main_wrap #origin_sung .container .contents .collage .bottom .thumbs .img img {width: 120px; height: 120px;}
-.main_wrap #origin_sung .container .contents .collage .bottom .thumbs .txt {width: 100%; padding: 0 20px; display: flex; flex-flow: column nowrap; gap: 3px;}
+.main_wrap #origin_sung .container .contents .collage .bottom .thumbs .txt {width: 100%; padding: 0 20px; display: flex; flex-flow: column nowrap; gap: 5px;}
 .main_wrap #origin_sung .container .contents .collage .bottom .thumbs .txt em {padding: 1px; border-bottom: 1px solid #000; font-weight: 600; width: max-content;}
 .main_wrap #origin_sung .container .contents .collage .bottom .thumbs .txt span {font-size: 0.875rem;}
 
@@ -179,24 +179,64 @@ body * {transition: all 0.3s;}
     font-size: 0.75rem;
 }
 .main_wrap #cakeroll .container .bottom .cake_list .img img {width: 200px; height: 200px;}
-.main_wrap #cakeroll .container .bottom .cake_list .txt {width: 100%; padding: 0 20px; display: flex; flex-flow: column nowrap; gap: 3px;}
+.main_wrap #cakeroll .container .bottom .cake_list .txt {width: 100%; padding: 0 20px; display: flex; flex-flow: column nowrap; gap: 7px;}
 .main_wrap #cakeroll .container .bottom .cake_list .txt em {padding: 1px; border-bottom: 1px solid #000; font-weight: 600; width: max-content;}
 .main_wrap #cakeroll .container .bottom .cake_list .txt span {font-size: 0.875rem;}
 
 /* 7행 영상 또는 이미지============================================================================ */
+.main_wrap #video {padding: 70px 360px;}
+.main_wrap #video .container {}
+.main_wrap #video .container .video {}
+.main_wrap #video .container .video iframe {}
 
 /* 8행 배달상품============================================================================ */
-.main_wrap #delivery {}
-.main_wrap #delivery .container {}
-.main_wrap #delivery .container .top {}
-.main_wrap #delivery .container .top h1 {}
+.main_wrap #delivery {padding: 70px 260px;}
+.main_wrap #delivery .container {width: 1400px;}
+.main_wrap #delivery .container .top {display: flex; flex-flow: row nowrap; justify-content: space-between;}
+.main_wrap #delivery .container .top h1 {font-size: 1.5rem; font-weight: 500; margin-bottom: 30px; text-transform: uppercase;}
 .main_wrap #delivery .container .top p {}
-.main_wrap #delivery .container .top p a {}
+.main_wrap #delivery .container .top p a {color: #B5B5B5; font-size: 0.875rem; padding: 1px; border-bottom: 1px solid #B5B5B5;}
 .main_wrap #delivery .container .bottom {}
-.main_wrap #delivery .container .bottom .product_list {}
-.main_wrap #delivery .container .bottom .product_list .product {}
-.main_wrap #delivery .container .bottom .product_list .product .img {}
+.main_wrap #delivery .container .bottom .product_list {
+    display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between; gap: 26.67px;
+}
+.main_wrap #delivery .container .bottom .product_list .product {
+    width: calc(100% / 4);
+    display: flex; flex-flow: column nowrap; align-items: flex-start; justify-content: space-between; gap: 20px;
+}
+.main_wrap #delivery .container .bottom .product_list .product .img {
+    width: 100%; height: 330px; position: relative;
+    background: #f5f5f5; border-radius: 20px;
+    display: flex; align-items: center; justify-content: center;
+}
 .main_wrap #delivery .container .bottom .product_list .product .img img {}
-.main_wrap #delivery .container .bottom .product_list .product .txt {}
-.main_wrap #delivery .container .bottom .product_list .product .txt em {}
-.main_wrap #delivery .container .bottom .product_list .product .txt span {}
+.main_wrap #delivery .container .bottom .product_list .product .txt {width: 100%; padding: 0 20px; display: flex; flex-flow: column nowrap; gap: 7px;}
+.main_wrap #delivery .container .bottom .product_list .product .txt a {}
+.main_wrap #delivery .container .bottom .product_list .product .txt a em {padding: 1px; border-bottom: 1px solid #000; font-weight: 600; width: max-content;}
+.main_wrap #delivery .container .bottom .product_list .product .txt span {font-size: 0.875rem;}
+
+/* 9행 브랜드 스토리============================================================================ */
+.main_wrap #brand_story {padding: 70px 0px;}
+.main_wrap #brand_story .container {position: relative;}
+.main_wrap #brand_story .container a {}
+.main_wrap #brand_story .container a img {}
+.main_wrap #brand_story .container a span {
+    font-size: 1.875rem; color: #fff; font-weight: 500; text-transform: uppercase;
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+
+/* 10행 공지사항============================================================================ */
+.main_wrap #notice {padding: 50px 260px;}
+.main_wrap #notice .container {
+    width: 1400px;
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+}
+.main_wrap #notice .container .left {display: flex; align-items: center; align-items: center;}
+.main_wrap #notice .container .left h1 {font-size: 1.5rem; font-weight: 500; text-transform: uppercase;}
+.main_wrap #notice .container .left .btn {margin: 0 20px 0 30px; padding: 3px 0 0 0;}
+.main_wrap #notice .container .left .btn button {}
+.main_wrap #notice .container .left .btn button img {width: 16px;}
+.main_wrap #notice .container .left .btn #prev {}
+.main_wrap #notice .container .left .btn #next {}
+.main_wrap #notice .container .right {}
+.main_wrap #notice .container .right a {color: #B5B5B5; font-size: 0.875rem; padding: 1px; border-bottom: 1px solid #B5B5B5; display: block;}
