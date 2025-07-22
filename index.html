@@ -9,12 +9,6 @@
 
     <!-- 웹폰트 : 프리텐다드 -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
-
-    <!-- 스타일시트 -->
-    <!-- 리셋 --><link rel="stylesheet" href="./styles/reset.css">
-    <!-- 커먼 --><link rel="stylesheet" href="./styles/common.css">
-    <!-- 개별 --><link rel="stylesheet" href="./styles/index.css">
-
     <!-- 플러그인 -->
     <!--플러그인 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
@@ -22,7 +16,15 @@
     <!--플러그인 필수 JS cdn 연결-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- 스타일시트 -->
+    <!-- 리셋 --><link rel="stylesheet" href="./styles/reset.css">
+    <!-- 커먼 --><link rel="stylesheet" href="./styles/common.css">
+    <!-- 개별 --><link rel="stylesheet" href="./styles/index.css">
+
     <!-- 스크립트 -->
+     <script src="./scripts/index.js" defer></script>
+     <script src="./scripts/swiper.js" defer></script>
     
 </head>
 <body>
@@ -49,15 +51,47 @@
         <!-- 슬라이드 배너 --> <!-- js======================================================== -->
         <div id="slide_wrap">
             <div class="container">
-                <a href="#">
-                    <span class="txt_wrap">
-                        <span class="txt">
-                            <span>자연발효 · 정직한 재료 · 정직한 대지의 빵</span>
-                            <span>성심 밀 방앗간</span>
-                            <spanp>빵 고민은 이제 끝! 자연의 맛을 살린 성심 밀 방앗간!</span>
-                        </span>
-                    </span>
-                </a>
+                <div class="swiper">
+                    <!--필수-->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <a href="#">
+                                <span class="txt_wrap">
+                                    <span class="txt">
+                                        <span>자연발효 · 정직한 재료 · 정직한 대지의 빵</span>
+                                        <span>성심 밀 방앗간</span>
+                                        <spanp>빵 고민은 이제 끝! 자연의 맛을 살린 성심 밀 방앗간!</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <a href="#">
+                                <span class="txt_wrap">
+                                    <span class="txt">
+                                        <span>자연발효 · 정직한 재료 · 정직한 대지의 빵</span>
+                                        <span>성심 밀 방앗간</span>
+                                        <spanp>빵 고민은 이제 끝! 자연의 맛을 살린 성심 밀 방앗간!</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide3">
+                            <a href="#">
+                                <span class="txt_wrap">
+                                    <span class="txt">
+                                        <span>자연발효 · 정직한 재료 · 정직한 대지의 빵</span>
+                                        <span>성심 밀 방앗간</span>
+                                        <spanp>빵 고민은 이제 끝! 자연의 맛을 살린 성심 밀 방앗간!</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--필요 시 사용(선택)-->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
         
@@ -147,77 +181,245 @@
         </div>
         <!-- 광고 배너======================================================== -->
         <div id="ad_bnr"><!-- js======================================================== -->
-            <a href="#"><img src="./images/bnr001.png" alt="튀김 소보로 생일 파티 바로가기"></a>
+            <div class="swiper">
+                <!--필수-->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <a href="#"><img src="./images/bnr001.png" alt="튀김 소보로 생일 파티 바로가기"></a>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <a href="#"><img src="./images/bnr001.png" alt="튀김 소보로 생일 파티 바로가기"></a>
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <a href="#"><img src="./images/bnr001.png" alt="튀김 소보로 생일 파티 바로가기"></a>
+                    </div>
+                </div>
+                <!--필요 시 사용(선택)-->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
         <!-- 오리지널 성심당======================================================== -->
         <div id="origin_sung"><!-- js======================================================== -->
             <div class="container">
                 <h1>original sungsimdang</h1>
                 <div class="contents">
-                    <a href="#" class="collage collage1">
-                        <span class="top">
-                            <span class="txt">
-                                <span>1980년 탄생 소보로, 앙금빵, 도넛의 3단 합체빵</span>
-                                <em>튀김 소보로</em>
-                            </span>
-                            <button type="button">details</button>
-                        </span>
-                        <span class="bottom">
-                            <span class="thumbs">
-                                <span class="img"><img src="./images/origin003.png" alt="튀김 소보로 바로가기"></span>
-                                <span class="txt">
-                                    <em>튀김소보로</em>
-                                    <span>1,700원</span>
-                                </span>
-                            </span>
-                            <span class="thumbs">
-                                <span class="img"><img src="./images/origin004.png" alt="초코튀소 바로가기"></span>
-                                <span class="txt">
-                                    <em>초코튀소</em>
-                                    <span>1,700원</span>
-                                </span>
-                            </span>
-                            <span class="thumbs">
-                                <span class="img"><img src="./images/origin005.png" alt="판타롱부추빵 바로가기"></span>
-                                <span class="txt">
-                                    <em>판타롱부추빵</em>
-                                    <span>품절</span>
-                                </span>
-                            </span>
-                        </span>
-                    </a>
-                    <a href="#" class="collage collage2">
-                        <span class="top">
-                            <span class="txt">
-                                <span>100% 순우유 생크림과 부드러운 카스텔라의 클래식한 조화!</span>
-                                <em>순수롤</em>
-                            </span>
-                            <button type="button">details</button>
-                        </span>
-                        <span class="bottom">
-                            <span class="thumbs">
-                                <span class="img"><img src="./images/origin006.png" alt="호두파운드 바로가기"></span>
-                                <span class="txt">
-                                    <em>호두파운드</em>
-                                    <span>16,000원</span>
-                                </span>
-                            </span>
-                            <span class="thumbs">
-                                <span class="img"><img src="./images/origin007.png" alt="성심성의파운드 바로가기"></span>
-                                <span class="txt">
-                                    <em>성심성의파운드</em>
-                                    <span>18,000원</span>
-                                </span>
-                            </span>
-                            <span class="thumbs">
-                                <span class="img"><img src="./images/origin008.png" alt="성심성의카스테라 바로가기"></span>
-                                <span class="txt">
-                                    <em>성심성의카스테라</em>
-                                    <span>품절</span>
-                                </span>
-                            </span>
-                        </span>
-                    </a>
+                    <div class="swiper">
+                        <!--필수-->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <a href="#" class="collage collage1">
+                                    <span class="top">
+                                        <span class="txt">
+                                            <span>1980년 탄생 소보로, 앙금빵, 도넛의 3단 합체빵</span>
+                                            <em>튀김 소보로</em>
+                                        </span>
+                                        <button type="button">details</button>
+                                    </span>
+                                    <span class="bottom">
+                                        <span class="thumbs">
+                                            <span class="img"><img src="./images/origin003.png" alt="튀김 소보로 바로가기"></span>
+                                            <span class="txt">
+                                                <em>튀김소보로</em>
+                                                <span>1,700원</span>
+                                            </span>
+                                        </span>
+                                        <span class="thumbs">
+                                            <span class="img"><img src="./images/origin004.png" alt="초코튀소 바로가기"></span>
+                                            <span class="txt">
+                                                <em>초코튀소</em>
+                                                <span>1,700원</span>
+                                            </span>
+                                        </span>
+                                        <span class="thumbs">
+                                            <span class="img"><img src="./images/origin005.png" alt="판타롱부추빵 바로가기"></span>
+                                            <span class="txt">
+                                                <em>판타롱부추빵</em>
+                                                <span>품절</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="collage collage2">
+                                    <span class="top">
+                                        <span class="txt">
+                                            <span>100% 순우유 생크림과 부드러운 카스텔라의 클래식한 조화!</span>
+                                            <em>순수롤</em>
+                                        </span>
+                                        <button type="button">details</button>
+                                    </span>
+                                    <span class="bottom">
+                                        <span class="thumbs">
+                                            <span class="img"><img src="./images/origin006.png" alt="호두파운드 바로가기"></span>
+                                            <span class="txt">
+                                                <em>호두파운드</em>
+                                                <span>16,000원</span>
+                                            </span>
+                                        </span>
+                                        <span class="thumbs">
+                                            <span class="img"><img src="./images/origin007.png" alt="성심성의파운드 바로가기"></span>
+                                            <span class="txt">
+                                                <em>성심성의파운드</em>
+                                                <span>18,000원</span>
+                                            </span>
+                                        </span>
+                                        <span class="thumbs">
+                                            <span class="img"><img src="./images/origin008.png" alt="성심성의카스테라 바로가기"></span>
+                                            <span class="txt">
+                                                <em>성심성의카스테라</em>
+                                                <span>품절</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide2">
+                                <a href="#" class="collage collage1">
+                                    <span class="top">
+                                        <span class="txt">
+                                            <span>1980년 탄생 소보로, 앙금빵, 도넛의 3단 합체빵</span>
+                                            <em>튀김 소보로</em>
+                                        </span>
+                                        <button type="button">details</button>
+                                    </span>
+                                    <span class="bottom">
+                                        <span class="thumbs">
+                                            <span class="img"><img src="./images/origin003.png" alt="튀김 소보로 바로가기"></span>
+                                            <span class="txt">
+                                                <em>튀김소보로</em>
+                                                <span>1,700원</span>
+                                            </span>
+                                        </span>
+                                        <span class="thumbs">
+                                            <span class="img"><img src="./images/origin004.png" alt="초코튀소 바로가기"></span>
+                                            <span class="txt">
+                                                <em>초코튀소</em>
+                                                <span>1,700원</span>
+                                            </span>
+                                        </span>
+                                        <span class="thumbs">
+                                            <span class="img"><img src="./images/origin005.png" alt="판타롱부추빵 바로가기"></span>
+                                            <span class="txt">
+                                                <em>판타롱부추빵</em>
+                                                <span>품절</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="collage collage2">
+                                    <span class="top">
+                                        <span class="txt">
+                                            <span>100% 순우유 생크림과 부드러운 카스텔라의 클래식한 조화!</span>
+                                            <em>순수롤</em>
+                                        </span>
+                                        <button type="button">details</button>
+                                    </span>
+                                    <span class="bottom">
+                                        <span class="thumbs">
+                                            <span class="img"><img src="./images/origin006.png" alt="호두파운드 바로가기"></span>
+                                            <span class="txt">
+                                                <em>호두파운드</em>
+                                                <span>16,000원</span>
+                                            </span>
+                                        </span>
+                                        <span class="thumbs">
+                                            <span class="img"><img src="./images/origin007.png" alt="성심성의파운드 바로가기"></span>
+                                            <span class="txt">
+                                                <em>성심성의파운드</em>
+                                                <span>18,000원</span>
+                                            </span>
+                                        </span>
+                                        <span class="thumbs">
+                                            <span class="img"><img src="./images/origin008.png" alt="성심성의카스테라 바로가기"></span>
+                                            <span class="txt">
+                                                <em>성심성의카스테라</em>
+                                                <span>품절</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide3">
+                                <a href="#" class="collage collage1">
+                                    <span class="top">
+                                        <span class="txt">
+                                            <span>1980년 탄생 소보로, 앙금빵, 도넛의 3단 합체빵</span>
+                                            <em>튀김 소보로</em>
+                                        </span>
+                                        <button type="button">details</button>
+                                    </span>
+                                    <span class="bottom">
+                                        <span class="thumbs">
+                                            <span class="img"><img src="./images/origin003.png" alt="튀김 소보로 바로가기"></span>
+                                            <span class="txt">
+                                                <em>튀김소보로</em>
+                                                <span>1,700원</span>
+                                            </span>
+                                        </span>
+                                        <span class="thumbs">
+                                            <span class="img"><img src="./images/origin004.png" alt="초코튀소 바로가기"></span>
+                                            <span class="txt">
+                                                <em>초코튀소</em>
+                                                <span>1,700원</span>
+                                            </span>
+                                        </span>
+                                        <span class="thumbs">
+                                            <span class="img"><img src="./images/origin005.png" alt="판타롱부추빵 바로가기"></span>
+                                            <span class="txt">
+                                                <em>판타롱부추빵</em>
+                                                <span>품절</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="collage collage2">
+                                    <span class="top">
+                                        <span class="txt">
+                                            <span>100% 순우유 생크림과 부드러운 카스텔라의 클래식한 조화!</span>
+                                            <em>순수롤</em>
+                                        </span>
+                                        <button type="button">details</button>
+                                    </span>
+                                    <span class="bottom">
+                                        <span class="thumbs">
+                                            <span class="img"><img src="./images/origin006.png" alt="호두파운드 바로가기"></span>
+                                            <span class="txt">
+                                                <em>호두파운드</em>
+                                                <span>16,000원</span>
+                                            </span>
+                                        </span>
+                                        <span class="thumbs">
+                                            <span class="img"><img src="./images/origin007.png" alt="성심성의파운드 바로가기"></span>
+                                            <span class="txt">
+                                                <em>성심성의파운드</em>
+                                                <span>18,000원</span>
+                                            </span>
+                                        </span>
+                                        <span class="thumbs">
+                                            <span class="img"><img src="./images/origin008.png" alt="성심성의카스테라 바로가기"></span>
+                                            <span class="txt">
+                                                <em>성심성의카스테라</em>
+                                                <span>품절</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <!--필요 시 사용(선택)-->
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+
+
+                    
+
+
+
+
+
                 </div>
             </div>
         </div>
@@ -228,39 +430,119 @@
                     <button type="button" id="cake">cake</button>
                     <button type="button" id="roll">roll</button>
                 </div>
-                <div class="bottom">
-                    <div class="cake_list">
-                        <a href="#" class="img"><img src="./images/cake001.png" alt="부띠끄과일동산(2호-미니) 바로가기"></a>
-                        <span class="txt">
-                            <a href="#"><em>부띠끄과일동산(2호-미니)</em></a>
-                            <span>48,000원</span>
-                        </span>
+                <div class="swiper">
+                    <!--필수-->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1 bottom">
+                            <div class="cake_list">
+                                <a href="#" class="img"><img src="./images/cake001.png" alt="부띠끄과일동산(2호-미니) 바로가기"></a>
+                                <span class="txt">
+                                    <a href="#"><em>부띠끄과일동산(2호-미니)</em></a>
+                                    <span>48,000원</span>
+                                </span>
+                            </div>
+                            <div class="cake_list">
+                                <a href="#" class="img">
+                                    <span>gift product</span><!-- absolute -->
+                                    <img src="./images/cake002.png" alt="축복 2호 바로가기">
+                                </a>
+                                <span class="txt">
+                                    <a href="#"><em>축복 2호</em></a>
+                                    <span>31,000원</span>
+                                </span>
+                            </div>
+                            <div class="cake_list">
+                                <a href="#" class="img"><img src="./images/cake003.png" alt="키리쉬모차르트 3호 바로가기"></a>
+                                <span class="txt">
+                                    <a href="#"><em>키리쉬모차르트 3호</em></a>
+                                    <span>36,000원</span>
+                                </span>
+                            </div>
+                            <div class="cake_list">
+                                <a href="#" class="img"><img src="./images/cake004.png" alt="축복 4호 바로가기"></a>
+                                <span class="txt">
+                                    <a href="#"><em>축복 4호</em></a>
+                                    <span>43,000원</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide2 bottom">
+                            <div class="cake_list">
+                                <a href="#" class="img"><img src="./images/cake001.png" alt="부띠끄과일동산(2호-미니) 바로가기"></a>
+                                <span class="txt">
+                                    <a href="#"><em>부띠끄과일동산(2호-미니)</em></a>
+                                    <span>48,000원</span>
+                                </span>
+                            </div>
+                            <div class="cake_list">
+                                <a href="#" class="img">
+                                    <span>gift product</span><!-- absolute -->
+                                    <img src="./images/cake002.png" alt="축복 2호 바로가기">
+                                </a>
+                                <span class="txt">
+                                    <a href="#"><em>축복 2호</em></a>
+                                    <span>31,000원</span>
+                                </span>
+                            </div>
+                            <div class="cake_list">
+                                <a href="#" class="img"><img src="./images/cake003.png" alt="키리쉬모차르트 3호 바로가기"></a>
+                                <span class="txt">
+                                    <a href="#"><em>키리쉬모차르트 3호</em></a>
+                                    <span>36,000원</span>
+                                </span>
+                            </div>
+                            <div class="cake_list">
+                                <a href="#" class="img"><img src="./images/cake004.png" alt="축복 4호 바로가기"></a>
+                                <span class="txt">
+                                    <a href="#"><em>축복 4호</em></a>
+                                    <span>43,000원</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide3 bottom">
+                            <div class="cake_list">
+                                <a href="#" class="img"><img src="./images/cake001.png" alt="부띠끄과일동산(2호-미니) 바로가기"></a>
+                                <span class="txt">
+                                    <a href="#"><em>부띠끄과일동산(2호-미니)</em></a>
+                                    <span>48,000원</span>
+                                </span>
+                            </div>
+                            <div class="cake_list">
+                                <a href="#" class="img">
+                                    <span>gift product</span><!-- absolute -->
+                                    <img src="./images/cake002.png" alt="축복 2호 바로가기">
+                                </a>
+                                <span class="txt">
+                                    <a href="#"><em>축복 2호</em></a>
+                                    <span>31,000원</span>
+                                </span>
+                            </div>
+                            <div class="cake_list">
+                                <a href="#" class="img"><img src="./images/cake003.png" alt="키리쉬모차르트 3호 바로가기"></a>
+                                <span class="txt">
+                                    <a href="#"><em>키리쉬모차르트 3호</em></a>
+                                    <span>36,000원</span>
+                                </span>
+                            </div>
+                            <div class="cake_list">
+                                <a href="#" class="img"><img src="./images/cake004.png" alt="축복 4호 바로가기"></a>
+                                <span class="txt">
+                                    <a href="#"><em>축복 4호</em></a>
+                                    <span>43,000원</span>
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cake_list">
-                        <a href="#" class="img">
-                            <span>gift product</span><!-- absolute -->
-                            <img src="./images/cake002.png" alt="축복 2호 바로가기">
-                        </a>
-                        <span class="txt">
-                            <a href="#"><em>축복 2호</em></a>
-                            <span>31,000원</span>
-                        </span>
-                    </div>
-                    <div class="cake_list">
-                        <a href="#" class="img"><img src="./images/cake003.png" alt="키리쉬모차르트 3호 바로가기"></a>
-                        <span class="txt">
-                            <a href="#"><em>키리쉬모차르트 3호</em></a>
-                            <span>36,000원</span>
-                        </span>
-                    </div>
-                    <div class="cake_list">
-                        <a href="#" class="img"><img src="./images/cake004.png" alt="축복 4호 바로가기"></a>
-                        <span class="txt">
-                            <a href="#"><em>축복 4호</em></a>
-                            <span>43,000원</span>
-                        </span>
-                    </div>
+                    <!--필요 시 사용(선택)-->
                 </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+                
+                
+                
+                
+                
             </div>
         </div>
         <!-- 영상 또는 이미지======================================================== -->
