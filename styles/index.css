@@ -1,5 +1,11 @@
 body * {transition: all 0.3s; overflow: hidden;}
+body, html {scroll-behavior: smooth;}
 .main_wrap {min-height: 100vh;}
+/* .container {
+    max-width: 1400px;
+    min-width: 340px;
+    overflow: hidden;
+} */
 
 /* 
 띠배너 : #D09677 
