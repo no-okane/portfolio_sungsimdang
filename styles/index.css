@@ -42,7 +42,7 @@ body, html {scroll-behavior: smooth;}
 } */
 .main_wrap #slide_wrap .container {max-width: 100%; min-width: 430px; margin: 0 auto; height: 97vh; position: relative; margin-bottom: 70px;}
 .main_wrap #slide_wrap .container .swiper {width: 100%; height: 97vh;}
-.main_wrap #slide_wrap .container .swiper .swiper-wrapper {overflow: visible; width: 100%; background-color: blue;}
+.main_wrap #slide_wrap .container .swiper .swiper-wrapper {overflow: visible; width: 100%;}
 .main_wrap #slide_wrap .container .swiper .swiper-wrapper .swiper-slide {}
 .main_wrap #slide_wrap .container .swiper .swiper-wrapper .slide1 {background: url(../images/slide001.png) no-repeat center / cover;}
 .main_wrap #slide_wrap .container .swiper .swiper-wrapper .slide2 {background: url(../images/slide001.png) no-repeat center / cover;}
@@ -62,7 +62,7 @@ body, html {scroll-behavior: smooth;}
 .main_wrap #slide_wrap .container .swiper .swiper-wrapper .swiper-slide a .txt_wrap * {color: #fff;}
 .main_wrap #slide_wrap .container .swiper .swiper-wrapper .swiper-slide a .txt_wrap .txt {display: flex; flex-flow: column nowrap; gap: 20px;}
 .main_wrap #slide_wrap .container .swiper .swiper-wrapper .swiper-slide a .txt_wrap .txt span:nth-of-type(1),
-.main_wrap #slide_wrap .container .swiper .swiper-wrapper .swiper-slide a .txt_wrap .txt span:nth-of-type(2) {font-size: 1.5rem;}
+.main_wrap #slide_wrap .container .swiper .swiper-wrapper .swiper-slide a .txt_wrap .txt span:nth-of-type(3) {font-size: 1.5rem;}
 .main_wrap #slide_wrap .container .swiper .swiper-wrapper .swiper-slide a .txt_wrap .txt span:nth-of-type(2) {font-size: 1.875rem;}
 #slide_wrap  .container .swiper-button-prev,
 #slide_wrap  .container .swiper-button-next {color: #ffffff; width: 70px;}
@@ -89,7 +89,7 @@ body, html {scroll-behavior: smooth;}
 .main_wrap #best_new {}
 .main_wrap #best_new .container {
     max-width: 1400px; min-width: 430px; margin: 0 auto; position: relative; padding: 70px 0;
-     height: max-content;
+    height: max-content;
     }
 .main_wrap #best_new .container * {color: #000;}
 .main_wrap #best_new .container .top {display: flex; flex-flow: row nowrap; justify-content: space-between;}
@@ -97,9 +97,7 @@ body, html {scroll-behavior: smooth;}
 .main_wrap #best_new .container .top p {}
 .main_wrap #best_new .container .top p a {color: #B5B5B5; font-size: 0.875rem; padding: 1px; border-bottom: 1px solid #B5B5B5;}
 
-.main_wrap #best_new .container .thumbs_list {
-    display: flex; flex-flow: row nowrap; gap: 32px;
-}
+.main_wrap #best_new .container .thumbs_list {display: flex; flex-flow: row nowrap; gap: 32px;}
 
 .main_wrap #best_new .container .thumbs_list .left {
     background: url(../images/best001.png);
@@ -282,8 +280,7 @@ body, html {scroll-behavior: smooth;}
 .main_wrap #notice .container .left {display: flex; align-items: center; align-items: center;}
 .main_wrap #notice .container .left h1 {font-size: 1.25rem; font-weight: 500; text-transform: uppercase;}
 .main_wrap #notice .container .left p {font-size: 0.875rem; font-weight: 500;}
-.main_wrap #notice .container .left .btn {margin: 0 20px 0 30px; padding: 3px 0 0 0;}
-.main_wrap #notice .container .left .btn {margin: 0 20px }
+.main_wrap #notice .container .left .btn {margin: 0 20px; padding: 3px 0 0 0;}
 .main_wrap #notice .container .left .btn button {}
 .main_wrap #notice .container .left .btn button img {width: 16px;}
 .main_wrap #notice .container .left .btn #prev {}
